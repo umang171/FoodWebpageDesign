@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f8f5f2;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Navigationbar css */
+header{
+    background-color:black;
+    opacity: 0.8;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+#navbar{
+    display: flex;
+    
+}
+#navbar img
+{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+#navmenus{
+    padding: 35px;
+}
+#navmenus ul{
+    display: flex;
+}
+#navmenus li{
+    list-style: none;
+}
+#navmenus li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+}
+#navmenus li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rebeccapurple; */
+    padding: 50px;
+    position: relative;
+    height: 280px;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg1.webp') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 380px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    padding: 10px;
+    color: white;
+}
+#home p{    
+    text-align: center;
+    font-size: 25px;
+    margin: 8px;
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* Service */
+#service h1{
+    padding: 8px;
+}
+.boxes
+{
+    display: flex;
+}
+.box
+{
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: #fff3de;
+    margin: 10px 20px;
+    padding: 25px;
+}
+.box img
+{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 4px auto;
+}
+
+/* Client */
+#client{
+    position: relative;
+}
+#client::before
+{
+    content: "";
+    background: url('../img/bg.webp') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#client .imgs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#client img{
+    height: 200px;
+    margin: 10px 35px;
+}
+#client h1{
+    color: white;
+}
+
+/* Contact us */
+#contact{
+    position: relative;
+
+}
+#form
+{
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+}
+#contact::before{
+    content: "";
+    background: url('../img/contact.webp') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 690px;
+    z-index: -1;
+    opacity: 0.3;
+}
+#form form{
+    display: flex;
+    flex-direction: column;
+}
+#form label{
+    font-size: 24px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 2px;
+}
+#form input{
+    font-size: 24px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 2px;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+ /* Utility class */
+ .btn{
+    font-size: 21px;
+    margin: 12px;
+    padding: 5px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .btn:hover{
+     background-color: white;
+     border: 2px solid black;
+     color: black;
+ }
+ .center
+ {
+     text-align: center;
+ }
+ .primary-heading{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: cursive;
+ }
+ 
